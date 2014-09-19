@@ -1,0 +1,11 @@
+<h1>Charities</h1>
+
+<% @charities.each do |charity| %>
+<ul>
+  <li><%= link_to charity.name, charity_path(charity) %></li>
+</ul>
+<% end %>
+
+
+
+<%= link_to "New Charity", new_charity_path %>
